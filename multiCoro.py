@@ -23,16 +23,16 @@ def run(filtered_data, Path):
 
     # Calculate correlations between selected columns and all other numeric variables
     correlations = {}
-    for depth in selected_columns:
-        for column in numeric_columns:
-            if column != depth:
-                paired_data = data[[depth, column]].dropna()
-                if not paired_data.empty:
-                    corr, _ = pearsonr(paired_data[depth], paired_data[column])
-                    corr = f"-{abs(corr)}" if corr < 0 else corr
-                    correlations[f"{depth} vs {column}"] = corr
-
-    # Rest of the code to process correlations ...
+    for selected_col in selected_columns:
+        if selected_col in numeric_data.columns:
+            for other_col in numeric_data.columns:
+                if selected_col != other_col:
+                    paired_data = numeric_data[[selected_col, other_col]].dropna()
+                    if not paired_data.empty:
+                        corr, _ = pearsonr(paired_data[selected_col], paired_data[other_col])
+                        corr = f"-{abs(corr)}" if corr < 0 else corr
+                        correlations[f"{selected_col} vs {other_col}"] = corr
+    
 
     # Find statistical anomalies in the data using Z-scores for the numeric columns
     numeric_data = data[numeric_columns]
