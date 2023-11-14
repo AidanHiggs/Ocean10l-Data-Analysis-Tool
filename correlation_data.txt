@@ -1,0 +1,73 @@
+deep turbidity vs pH mid                           0.861984
+deep turbidity vs pH bottom                        0.860157
+deep turbidity vs pH surface                       0.566798
+mid turbidty vs pH surface                         0.554898
+surface turbidity vs secchi depth (cm)             0.524199
+surface turbidity vs pH bottom                     0.477652
+mid turbidty vs secchi depth (cm)                  0.447598
+surface turbidity vs pH surface                    0.422274
+surface turbidity vs DOY                           0.413012
+surface turbidity vs deep temp                     0.402877
+mid turbidty vs pH mid                             0.394974
+surface turbidity vs mid temp                      0.394407
+surface turbidity vs surface salinity              0.389919
+surface turbidity vs surface temp (C)              0.360073
+mid turbidty vs depth (cm)                         0.339647
+mid turbidty vs flow rate (m/s)                    0.305394
+surface turbidity vs air temp (C)                  0.294031
+surface turbidity vs pH mid                        0.293495
+surface turbidity vs depth (cm)                    0.271015
+deep turbidity vs Beaufort Wind Speed              0.264091
+mid turbidty vs pH bottom                          0.240904
+surface turbidity vs Beaufort Wind Speed           0.233409
+mid turbidty vs air temp (C)                       0.216143
+mid turbidty vs DOY                                0.213249
+deep turbidity vs Water color                      0.202328
+deep turbidity vs mid salinity                     0.188412
+surface turbidity vs flow rate (m/s)               0.180488
+mid turbidty vs Beaufort Wind Speed                0.172895
+deep turbidity vs Predicted tide height (cm)       0.172044
+deep turbidity vs deep salinity                    0.165404
+deep turbidity vs secchi depth (cm)                0.155739
+deep turbidity vs flow rate (m/s)                  0.153071
+deep turbidity vs depth (cm)                       0.150331
+mid turbidty vs mid salinity                       0.135068
+mid turbidty vs surface salinity                   0.115063
+mid turbidty vs Water color                        0.103540
+mid turbidty vs mid temp                           0.094375
+mid turbidty vs deep temp                          0.085361
+deep turbidity vs air temp (C)                     0.071765
+deep turbidity vs surface salinity                 0.071389
+mid turbidty vs surface temp (C)                   0.058507
+mid turbidty vs Predicted tide height (cm)         0.054074
+deep turbidity vs DOY                              0.053407
+surface turbidity vs mid salinity                  0.050799
+deep turbidity vs surface temp (C)                 0.040984
+surface turbidity vs Water color                   0.040869
+surface turbidity vs deep salinity                 0.034670
+mid turbidty vs deep salinity                      0.033517
+surface turbidity vs Predicted tide height (cm)    0.012790
+deep turbidity vs deep temp                        0.008186
+deep turbidity vs mid temp                         0.004969
+dtype: float64
+depth (cm)                    2
+Predicted tide height (cm)    2
+DOY                           0
+surface salinity              0
+mid turbidty                  0
+surface turbidity             0
+pH bottom                     0
+pH mid                        0
+pH surface                    0
+deep salinity                 0
+mid salinity                  0
+deep temp                     0
+mid temp                      0
+surface temp (C)              0
+air temp (C)                  0
+secchi depth (cm)             0
+flow rate (m/s)               0
+Water color                   0
+Beaufort Wind Speed           0
+deep turbidity                0
+dtype: int64

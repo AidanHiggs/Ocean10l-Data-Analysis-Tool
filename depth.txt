@@ -1,0 +1,33 @@
+deep temp vs mid temp                            0.992767
+mid temp vs deep temp                            0.992767
+mid temp vs surface temp (C)                     0.990847
+surface temp (C) vs mid temp                     0.990847
+deep temp vs surface temp (C)                    0.981418
+                                                   ...   
+deep turbidity vs deep temp                      0.008186
+mid temp vs deep turbidity                       0.004969
+deep turbidity vs mid temp                       0.004969
+Predicted tide height (cm) vs flow rate (m/s)    0.003599
+flow rate (m/s) vs Predicted tide height (cm)    0.003599
+Length: 380, dtype: float64
+DOY                           0
+Predicted tide height (cm)    0
+mid turbidty                  0
+surface turbidity             0
+pH bottom                     0
+pH mid                        0
+pH surface                    0
+deep salinity                 0
+mid salinity                  0
+surface salinity              0
+deep temp                     0
+mid temp                      0
+surface temp (C)              0
+air temp (C)                  0
+secchi depth (cm)             0
+depth (cm)                    0
+flow rate (m/s)               0
+Water color                   0
+Beaufort Wind Speed           0
+deep turbidity                0
+dtype: int64

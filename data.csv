@@ -1,0 +1,30 @@
+date,Time,DOY,Predicted tide height (cm),"tide (high,low,mid)","tide (ebb, flood, slack)",weather,Beaufort Wind Speed,Wind direction,Water color,flow rate (m/s),depth (cm),secchi depth (cm),air temp (C),surface temp (C),mid temp,deep temp,surface salinity,mid salinity,deep salinity,pH surface,pH mid,pH bottom,surface turbidity,mid turbidty,deep turbidity,Notes
+2022-09-22,10:15:00,265,160.0,high,slack,clear,,,,0.0,310,80.0,,18.1,18.1,17.5,34.1,33.7,33.8,,,,12.3,11.3,10.0,
+2022-09-29,10:15:00,273,100.0,low,flood,clear,,,,0.2,250,70.0,,16.6,16.9,16.7,33.2,32.9,33.2,,,,22.5,16.1,19.2,
+2022-10-06,10:15:00,281,190.0,high,slack,low overcast,2.0,WNW,,0.0,320,70.0,18.7,17.2,17.2,17.0,,,,,,,23.5,24.3,46.5,
+2022-10-13,10:15:00,289,129.0,mid,flood,mostly clear,4.0,W,,0.195,165,45.0,14.7,14.8,14.5,14.5,33.6,34.3,34.3,,,,67.4,77.4,85.7,
+2022-10-20,10:15:00,297,155.0,high,slack,foggy,3.0,NW,,0.0,304,50.0,,15.0,15.0,15.1,33.7,33.6,33.8,,,,30.0,28.0,23.2,
+2022-11-03,10:15:00,313,180.0,high,ebb,clear,3.0,NW,,0.0,297,,,9.9,10.6,10.5,,,,,,,31.4,9.2,16.4,
+2022-11-10,10:30:00,320,200.0,high,slack,clear,2.0,W/NW,,,332,58.0,,,,,26.1,31.4,32.3,,,,,,,
+2022-11-17,10:30:00,327,121.0,mid,ebb,mostly clear,,W/NW,,0.0,250,77.0,11.6,8.7,9.9,10.6,26.6,28.8,27.6,,,,-1.2,15.2,23.9,
+2022-12-08,10:30:00,342,229.99999999999997,high,slack,rainy,5.0,ESE,,,370,50.0,9.5,8.0,8.8,9.0,30.8,34.9,34.9,,,,15.8,22.7,19.5,
+2023-02-16,12:03:00,47,72.0,mid,ebb,cloudy,4.0,N,28.0,0.71,172,45.0,8.1,7.5,,,12.8,,,,,,29.2,,,Very strong current made it hard to measure depth and use the Van Dorn Sampler.
+2023-02-23,10:37:00,54,90.0,mid,flood,snowing,2.0,E,23.0,,238,25.0,3.8,4.8,5.5,5.5,5.5,16.4,18.6,,,,14.6,8.0,15.1,Snowing!
+2023-03-02,10:20:00,61,150.0,mid,ebb,overcast,2.0,S,23.0,0.1,270,30.0,13.0,7.3,8.4,8.5,5.0,30.0,26.0,,,,87.9,28.9,40.6,"Issues with salinity probe, used refractometer data instead.  Current was speeding up noticeably."
+2023-03-09,10:17:00,68,128.0,mid,flood,light rain,7.0,SE,23.0,0.3,160,18.0,8.4,7.4,7.6,7.7,10.0,30.4,30.1,,,,80.4,39.2,46.9,Really windy; current was going counter to wind on surface; made float speed too hard to measure
+2023-03-23,10:20:00,82,60.0,low,flood,partly cloudy,4.0,SE,21.0,0.1,190,30.0,14.4,10.1,11.0,10.5,5.7,9.0,11.2,,,,21.2,21.6,18.9,First time we measured temp with long line - data here are probe in Van Dorn sample
+2023-03-30,10:14:00,89,120.0,high,ebb,Partly cloudy,2.0,NW,23.0,0.18,228,17.0,,,,,7.0,6.0,24.0,,,,53.1,52.3,29.9,"Computers weren't working, couldn't get a lot of measurements"
+2023-04-09,10:15:00,96,100.0,mid,flood,overcast,3.0,E,23.0,0.15,202,45.0,13.6,10.7,11.2,10.9,15.0,24.0,20.0,,,,25.2,26.2,28.8,
+2023-04-13,10:19:00,103,50.0,low,ebb,sunny,3.0,W,22.0,0.375,179,32.0,13.4,11.0,10.7,11.3,5.0,9.0,15.0,,,,,,,
+2023-04-20,10:18:00,110,90.0,low,flood,mostly cloudy,1.0,SW,23.0,0.35,210,55.0,13.4,13.3,13.0,12.9,16.0,20.0,22.0,,,,26.7,24.0,12.3,
+2023-04-27,10:18:00,117,40.0,low,slack,sunny with fog,2.0,W,23.0,0.53,179,67.0,19.3,15.9,16.5,18.0,19.0,25.0,26.0,,,,11.9,18.5,24.3,Also did beach profile on this day
+2023-05-04,10:12:00,124,397.0,High,Flood,Cloudy/ Sprinkling,,SW,20.0,0.614,280,45.0,11.9,14.2,14.3,14.4,20.4,22.0,22.3,,,,22.4,34.4,33.7,
+2023-05-11,10:36:00,131,-20.0,Low,Ebb,Cloudy,4.0,W,21.0,0.005,125,,15.6,13.6,15.6,15.7,8.0,14.0,18.0,,,,16.2,22.4,18.1,Finals week - students wanted to go to the field and look at plankton
+2023-09-14,12:25:00,257,184.0,High,slack,Clear,5.0,NW,27.0,0.0,287,60.0,25.2,19.8,20.0,19.5,33.1,32.6,31.6,,,,2.3,1.1,14.0,Forgot pipet for refractometer - measurements were unreliable - used probe data instead
+2023-09-28,10:21:00,271,180.0,High,slack,Clear,2.0,E,20.0,0.0,280,60.0,15.8,16.3,16.2,16.3,32.0,33.0,33.0,7.7,7.6,7.6,25.5,39.0,36.7,
+2023-10-05,10:24:00,278,110.00000000000001,low,slack,Clear/Foggy,0.0,,22.0,0.0,220,110.0,28.2,17.3,17.0,16.4,29.0,35.0,34.9,7.3,7.4,7.6,10.2,10.2,19.5,Need to ask students about salinity numbers
+2023-10-12,10:19:00,285,180.0,high,slack,Clear,4.0,W,27.0,0.1,310,80.0,15.7,15.5,15.3,15.3,26.1,27.3,27.4,7.8,7.8,8.9,8.9,11.5,55.8,Flow rate with floating stick
+2023-10-19,10:45:00,292,139.0,mid,slack,foggy,4.0,W,28.0,0.122,240,115.0,14.2,16.5,16.5,16.7,34.0,35.0,35.0,7.7,7.7,7.6,19.4,18.7,33.0,Refractometer and salinity probe did not agree - used refractometer
+2023-10-26,10:35:00,299,215.0,high,slack,Clear,3.0,E,23.0,0.0,280,70.0,17.9,13.5,13.6,13.6,32.0,34.0,35.0,7.7,7.6,7.6,22.0,23.0,27.5,Hard frost warning over night last night
+2023-11-02,10:20:00,306,120.0,low,slack,rainy,1.0,S,11.0,0.0,230,170.0,,13.2,13.3,13.5,33.0,33.0,33.0,7.7,7.4,7.7,13.2,13.8,23.5,"Really rainy; also beta bottle hit bottom, might have disturbed sediment?"
+2023-11-09,10:22:00,313,180.0,high,ebb,partly cloudy,2.0,E,21.0,0.08,283,90.0,14.1,12.7,13.2,13.5,24.0,32.0,38.0,6.8,7.3,7.6,10.8,4.9,22.2,Rained heavily over the last week
