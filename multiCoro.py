@@ -21,21 +21,20 @@ def run(filtered_data, Path):
         print("No valid numeric columns selected for correlation analysis.")
         return
 
+    numeric_data = data[numeric_columns]
+
     # Calculate correlations between selected columns and all other numeric variables
     correlations = {}
     for selected_col in selected_columns:
-        if selected_col in numeric_data.columns:
-            for other_col in numeric_data.columns:
-                if selected_col != other_col:
-                    paired_data = numeric_data[[selected_col, other_col]].dropna()
-                    if not paired_data.empty:
-                        corr, _ = pearsonr(paired_data[selected_col], paired_data[other_col])
-                        corr = f"-{abs(corr)}" if corr < 0 else corr
-                        correlations[f"{selected_col} vs {other_col}"] = corr
-    
+        for other_col in numeric_data.columns:
+            if selected_col != other_col:
+                paired_data = numeric_data[[selected_col, other_col]].dropna()
+                if not paired_data.empty:
+                    corr, _ = pearsonr(paired_data[selected_col], paired_data[other_col])
+                    corr = f"-{abs(corr)}" if corr < 0 else corr
+                    correlations[f"{selected_col} vs {other_col}"] = corr
 
     # Find statistical anomalies in the data using Z-scores for the numeric columns
-    numeric_data = data[numeric_columns]
     anomalies = numeric_data.apply(zscore).abs() > 2
 
     # Convert the correlations dictionary to a series for better display and sort by absolute value
@@ -55,29 +54,27 @@ def run(filtered_data, Path):
         print(anomaly_counts)
     
     # Plotting the most significant correlations as scatter plots
-    # Selecting the top correlations to plot
     top_correlations = correlation_series.head(3).index
     
-    # Plotting the significant correlations as scatter plots
     fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(10, 15))
     
     for i, corr in enumerate(top_correlations):
-        depth, variable = corr.split(" vs ")
-        axes[i].scatter(numeric_data[depth], numeric_data[variable])
-        axes[i].set_xlabel(depth)
-        axes[i].set_ylabel(variable)
-        axes[i].set_title(f'Scatter plot of {depth} vs {variable} (Correlation: {correlation_series[corr]:.2f})')
-    
+        selected_col, other_col = corr.split(" vs ")
+        axes[i].scatter(numeric_data[selected_col], numeric_data[other_col])
+        axes[i].set_xlabel(selected_col)
+        axes[i].set_ylabel(other_col)
+        axes[i].set_title(f'Scatter plot of {selected_col} vs {other_col} (Correlation: {correlation_series[corr]:.2f})')
+
     plt.tight_layout()
     
     # Save the figure as a PNG file to the specified directory
-    plt.savefig('/home/flabbydino/Documents/correlation_scatter_plots.png')
+    plt.savefig('correlation_scatter_plots.png')
     
     # Export correlation data
     print("Would you like to export the correlation data? (y/n)")
     sel = input()
     if sel == 'y':
-        with open('correlation_data.txt', 'w') as file:
+        with open(f'{selected_columns}_correlation_data.txt', 'w') as file:
             file.write(str(correlation_series))
             file.write('\n')
             file.write(str(anomaly_counts))
@@ -86,5 +83,4 @@ def run(filtered_data, Path):
         print("Correlation data not exported.")
     else:
         print("Invalid input. Correlation data not exported.")
-    
-   
+

@@ -1,6 +1,5 @@
 import threading
 import sys
-import keyboard
 import time
 import coro as coro
 import timeseries as timeseries

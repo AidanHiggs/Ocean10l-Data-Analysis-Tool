@@ -30,7 +30,7 @@ def run(selected_columns, Path):
     print(correlation_series)
     
     # Find statistical anomalies in the data using Z-scores for the numeric columns
-    anomalies = numeric_data.apply(zscore).abs() > 22
+    anomalies = numeric_data.apply(zscore).abs() > 2
     
     # Count the number of anomalies for each column
     anomaly_counts = anomalies.sum().sort_values(ascending=False)
@@ -42,7 +42,6 @@ def run(selected_columns, Path):
         print(anomaly_counts)
     
     # Plotting the most significant correlations as scatter plots
-    # Selecting the top correlations to plot
     top_correlations = correlation_series.head(3).index
      
     # Plotting the significant correlations as scatter plots
@@ -61,16 +60,16 @@ def run(selected_columns, Path):
     else:
         print("Invalid input. Correlation data not exported.")
     for i, corr in enumerate(top_correlations):
-        depth, variable = corr.split(" vs ")
+        variable = corr.split(" vs ")
         axes[i].scatter(numeric_data[depth], numeric_data[variable])
-        axes[i].set_xlabel(depth)
-        axes[i].set_ylabel(variable)
-        axes[i].set_title(f'Scatter plot of {depth} vs {variable} (Correlation: {correlation_series[corr]:.2f})')
+        axes[i].set_xlabel(selected_col)
+        axes[i].set_ylabel(other_col)
+        axes[i].set_title(f'Scatter plot of {selected_col} vs {other_col} (Correlation: {correlation_series[corr]:.2f})')
     
     plt.tight_layout()
     
     # Save the figure as a PNG file to the specified directory
-    plt.savefig('/home/flabbydino/Documents/correlation_scatter_plots.png')
+    plt.savefig('correlation_scatter_plots.png')
     
     if column in anomaly_counts.index and anomaly_counts[column] > 1:
         for column in anomaly_counts.index:
@@ -78,7 +77,7 @@ def run(selected_columns, Path):
             anomalous_data = data[anomalies[column]]
             print(anomalous_data)
     # Additionally, ensure that the plt.show() line is commented out or removed to prevent the script from trying to open a window for the plot, which is not necessary when running the script from a terminal without a GUI.
-    print("would you like to display the 1? (y/n)")
+    print("would you like to display the graph? (y/n)")
     sel = input()
     if sel == 'y':
         plt.show()
